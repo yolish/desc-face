@@ -1,0 +1,20 @@
+retinanet-baseline
+------------------
+train.py 
+--training_dataset /home/yoli/datasets/WIDER/wider_for_retinaface/widerface/train/label.txt --network resnet50
+
+in config:
+batch size 6, num_gpus: 1 ms_desciprtor: true
+
+test_wider.py
+--dataset_folder
+/home/yoli/datasets/WIDER/wider_for_retinaface/widerface/val/images/
+--save_folder
+./widerface_evaluate/widerface_txt/
+--trained_model
+./weights/Resnet50_Final.pth
+--network
+resnet50
+--cpu
+
+
